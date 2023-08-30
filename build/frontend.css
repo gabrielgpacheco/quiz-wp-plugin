@@ -1,0 +1,123 @@
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/frontend.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+.quiz-frontend {
+  background-color: #EBEBEB;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.03);
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 35px;
+}
+.quiz-frontend p {
+  font-size: 1.55rem;
+  margin: 0 0 15px 0 !important;
+}
+.quiz-frontend ul {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 767px) {
+  .quiz-frontend ul {
+    margin: 0 -20px 0 0;
+    display: flex;
+  }
+}
+.quiz-frontend li {
+  vertical-align: middle;
+  font-size: 0.93rem;
+  flex: 1;
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (min-width: 767px) {
+  .quiz-frontend li {
+    margin: 0 20px 0 0;
+  }
+}
+.quiz-frontend li:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.quiz-frontend li svg {
+  fill: rgb(0, 158, 47);
+  margin-right: 5px;
+  margin-bottom: -5px;
+}
+.quiz-frontend .no-click {
+  cursor: auto;
+}
+.quiz-frontend .no-click:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.quiz-frontend .fade-incorrect {
+  cursor: auto;
+  opacity: 0.25;
+}
+.quiz-frontend .fade-incorrect svg {
+  fill: rgb(235, 0, 0);
+}
+.quiz-frontend .correct-message,
+.quiz-frontend .incorrect-message {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(156, 226, 177);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.35);
+  transition: all 0.33s ease-out;
+  transform-origin: 50% 50%;
+}
+.quiz-frontend .correct-message--visible,
+.quiz-frontend .incorrect-message--visible {
+  animation: 2.6s showModal;
+}
+.quiz-frontend .correct-message svg,
+.quiz-frontend .incorrect-message svg {
+  margin-right: 12px;
+}
+.quiz-frontend .correct-message p,
+.quiz-frontend .incorrect-message p {
+  margin: 0 !important;
+}
+.quiz-frontend .incorrect-message {
+  background-color: rgb(224, 176, 176);
+}
+
+@keyframes showModal {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+  }
+  15% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  85% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+  }
+}
+
+/*# sourceMappingURL=frontend.css.map*/
